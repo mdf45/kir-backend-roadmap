@@ -13,8 +13,8 @@
   --marker: #d8ef6b;
   --sun: #f2c14d;
   --white: #fff;
-  --font-display: "Bitter", Georgia, serif;
-  --font-body: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "Helvetica Neue", Arial, sans-serif;
   --shadow-small: 0 8px 24px rgb(23 32 28 / 7%);
   --radius-sm: 8px;
   --radius: 14px;
