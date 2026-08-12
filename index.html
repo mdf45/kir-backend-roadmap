@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Практическая 24-недельная программа обучения backend-разработке на C#, .NET 10, PostgreSQL и инфраструктурном стеке.">
+  <meta property="og:title" content="Backend / 24 — маршрут обучения">
+  <meta property="og:description" content="24 недели. Один рабочий сервис. Ноль магии.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kir.cocal.xyz/">
+  <title>Backend / 24 — маршрут обучения</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:opsz,wght@8..144,500;8..144,600;8..144,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Backend 24 — наверх">
+        <span class="brand-mark">B/24</span>
+        <span class="brand-copy">backend<br>apprenticeship</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Открыть навигацию</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#route">Маршрут</a>
+        <a href="#rhythm">Ритм</a>
+        <a href="#ai">AI</a>
+        <a href="#control">Контроль</a>
+        <a href="#final">Финал</a>
+      </nav>
+
+      <button class="print-button" type="button" data-print>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-3M7 14h10v7H7z"/></svg>
+        PDF
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Персональный маршрут · 2026</p>
+          <h1 id="hero-title">24 недели.<br>Один рабочий сервис.<br><em>Ноль магии.</em></h1>
+          <p class="hero-lede">Маршрут от слабой базы до небольших backend-тикетов в реальном проекте — с тестами, PR и обязательной защитой каждого решения.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#diagnostic">Начать с диагностики</a>
+            <a class="button button-ghost" href="#route">Смотреть маршрут <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-map" role="img" aria-label="Маршрут из 24 недель и 6 контрольных точек">
+          <div class="hero-number" aria-hidden="true">24</div>
+          <svg class="route-line" viewBox="0 0 520 520" role="img" aria-label="Линия маршрута обучения">
+            <path class="route-shadow" d="M48 94 C154 22 222 146 310 101 S484 73 462 190 C440 308 246 232 242 348 C238 457 388 469 474 411"/>
+            <path class="route-path" d="M48 94 C154 22 222 146 310 101 S484 73 462 190 C440 308 246 232 242 348 C238 457 388 469 474 411"/>
+            <circle cx="48" cy="94" r="7"/><circle cx="185" cy="91" r="7"/>
+            <circle cx="348" cy="91" r="7"/><circle cx="459" cy="180" r="7"/>
+            <circle cx="316" cy="279" r="7"/><circle cx="246" cy="356" r="7"/>
+            <circle cx="474" cy="411" r="11" class="route-end"/>
+          </svg>
+          <span class="map-label map-label-start">C# / START</span>
+          <span class="map-label map-label-data">DATA</span>
+          <span class="map-label map-label-api">API</span>
+          <span class="map-label map-label-infra">INFRA</span>
+          <span class="map-label map-label-ship">SHIP / 24</span>
+          <div class="map-note">6 контрольных ворот.<br>Ни одного прыжка через фундамент.</div>
+        </div>
+      </div>
+
+      <div class="stat-strip shell" role="group" aria-label="Ключевые параметры программы">
+        <div><strong>≈670</strong><span>часов практики</span></div>
+        <div><strong>24</strong><span>небольших PR</span></div>
+        <div><strong>6</strong><span>checkpoint’ов</span></div>
+        <div><strong>1</strong><span>сквозной WorkHub</span></div>
+      </div>
+    </section>
+
+    <section class="stack-ticker" aria-label="Технологии курса">
+      <div class="ticker-track">
+        <span>C#</span><i>•</i><span>.NET 10</span><i>•</i><span>ASP.NET Core</span><i>•</i><span>PostgreSQL</span><i>•</i><span>EF Core</span><i>•</i><span>Redis</span><i>•</i><span>RabbitMQ</span><i>•</i><span>SignalR</span><i>•</i><span>Docker</span><i>•</i><span>xUnit</span>
+      </div>
+    </section>
+
+    <section class="brief section shell" id="diagnostic" aria-labelledby="brief-title">
+      <div class="section-kicker">00 / Куда идём</div>
+      <div class="brief-grid">
+        <div>
+          <h2 id="brief-title">Не «выучить backend».<br><em>Стать полезным команде.</em></h2>
+          <p class="section-lede">Через шесть месяцев Кир должен безопасно закрывать маленькие задачи под review: прочитать request flow, внести точечное изменение, написать тесты и объяснить решение.</p>
+        </div>
+        <div class="outcome-card">
+          <span class="card-index">Результат</span>
+          <ul class="check-list">
+            <li>CRUD, validation, mapping и локальные bugfix’ы</li>
+            <li>PostgreSQL и EF Core без очевидных ловушек</li>
+            <li>Unit + integration tests одной командой</li>
+            <li>Docker Compose и диагностика по логам</li>
+            <li>Маленький PR без случайного «заодно переписал всё»</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="diagnostic-card">
+        <div class="diagnostic-number">2<span>ч</span></div>
+        <div>
+          <p class="eyebrow">Стартовая диагностика · без AI</p>
+          <h3>Сначала найдём реальные пробелы</h3>
+          <p>Создать console app, обработать набор чисел, объяснить базовые конструкции, сделать Git-коммит и прочитать простой SQL-запрос. Результат не «оценка», а карта дыр в фундаменте.</p>
+        </div>
+        <a href="#week-1" class="text-link">К первой неделе <span>→</span></a>
+      </div>
+
+      <div class="scope-note">
+        <strong>Пока не трогаем:</strong>
+        <span>Microservices</span><span>Kubernetes</span><span>глубокий DDD</span><span>CQRS</span><span>Event Sourcing</span><span>production-доступ</span>
+        <p>Сначала один вертикальный срез. Распределённое спагетти успеет найти нас позже.</p>
+      </div>
+    </section>
+
+    <section class="rhythm section" id="rhythm" aria-labelledby="rhythm-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="section-kicker">01 / Рабочий ритм</span><h2 id="rhythm-title">Четыре часа.<br><em>Каждый день.</em></h2></div>
+          <p>Воскресенье остаётся лёгким: никакой новой тяжёлой темы — только повторение, пересдача и короткая демонстрация.</p>
+        </div>
+
+        <div class="day-clock" role="group" aria-label="Распределение четырёх часов обучения">
+          <div class="clock-center"><strong>4:00</strong><span>в день</span></div>
+          <div class="clock-segment clock-a"><strong>30</strong><span>повторение</span></div>
+          <div class="clock-segment clock-b"><strong>45</strong><span>теория</span></div>
+          <div class="clock-segment clock-c"><strong>120</strong><span>код</span></div>
+          <div class="clock-segment clock-d"><strong>30</strong><span>проверка</span></div>
+          <div class="clock-segment clock-e"><strong>15</strong><span>журнал</span></div>
+        </div>
+
+        <ol class="week-rhythm" aria-label="Ритм учебной недели">
+          <li><span>Пн</span><strong>Понять</strong><small>Тема и упражнение по образцу</small></li>
+          <li><span>Вт</span><strong>Повторить</strong><small>Задача с документацией</small></li>
+          <li><span>Ср</span><strong>Сделать</strong><small>Похожая задача без образца</small></li>
+          <li><span>Чт</span><strong>Сломать</strong><small>Границы, тесты и debugger</small></li>
+          <li><span>Пт</span><strong>Встроить</strong><small>Вертикальный срез WorkHub</small></li>
+          <li><span>Сб</span><strong>Отправить</strong><small>PR, self-review и README</small></li>
+          <li><span>Вс</span><strong>Защитить</strong><small>Без AI, ретро и пробелы</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="route section shell" id="route" aria-labelledby="route-title">
+      <div class="section-heading route-heading">
+        <div><span class="section-kicker">02 / Полный маршрут</span><h2 id="route-title">24 недели,<br><em>5 ясных фаз</em></h2></div>
+        <div class="route-controls">
+          <p>Каждая неделя заканчивается работающим результатом. Нажми на неделю, чтобы увидеть практику и критерий готовности.</p>
+          <button class="expand-button" type="button" aria-pressed="false" data-expand-all>Раскрыть все</button>
+        </div>
+      </div>
+
+      <nav class="phase-nav" aria-label="Навигация по фазам">
+        <a href="#phase-1"><span>01</span> C#</a>
+        <a href="#phase-2"><span>02</span> Data</a>
+        <a href="#phase-3"><span>03</span> API</a>
+        <a href="#phase-4"><span>04</span> Infra</a>
+        <a href="#phase-5"><span>05</span> Ship</a>
+      </nav>
+
+      <div class="phase" id="phase-1">
+        <header class="phase-header">
+          <div class="phase-number">01</div>
+          <div><p>Недели 1–7 · Foundation</p><h3>C# и рабочая база</h3></div>
+          <span class="phase-hours">196 часов</span>
+        </header>
+
+        <div class="weeks-list">
+          <details class="week-card" id="week-1" open>
+            <summary><span class="week-no">01</span><span class="week-title"><small>START</small><strong>Инструменты, терминал, Git и первый C#</strong></span><span class="week-chip">console</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>.NET 10 SDK, IDE, `dotnet new/build/run`, типы, ввод-вывод; Git status/add/commit/log/diff.</p></div><div><small>Сделать</small><p>15–20 небольших console-задач и репозиторий `backend-learning` с чистой историей.</p></div><div><small>Готовность</small><p>Сам создаёт и запускает project, чинит compile error, объясняет working tree, index и commit.</p></div></div>
+          </details>
+          <details class="week-card" id="week-2">
+            <summary><span class="week-no">02</span><span class="week-title"><small>CONTROL FLOW</small><strong>Условия, циклы, методы и debugger</strong></span><span class="week-chip">debug</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>`if`, `switch`, loops, methods, parameters, scope, breakpoint и пошаговую отладку.</p></div><div><small>Сделать</small><p>Calculator, converter, «угадай число» и безопасный разбор пользовательского ввода.</p></div><div><small>Готовность</small><p>Не дублирует логику, находит ошибку debugger’ом и объясняет простой call stack.</p></div></div>
+          </details>
+          <details class="week-card" id="week-3">
+            <summary><span class="week-no">03</span><span class="week-title"><small>DATA IN MEMORY</small><strong>Коллекции, даты, nullable и JSON</strong></span><span class="week-chip">json</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>`List`, `Dictionary`, `HashSet`, strings, `Guid`, `DateTimeOffset`, enum, nullable, files и JSON.</p></div><div><small>Сделать</small><p>Console task manager с CRUD, фильтрацией и сохранением между запусками.</p></div><div><small>Готовность</small><p>Осознанно выбирает collection, обрабатывает пустой input и не глушит nullable warnings.</p></div></div>
+          </details>
+          <details class="week-card" id="week-4">
+            <summary><span class="week-no">04</span><span class="week-title"><small>OBJECTS</small><strong>ООП без архитектурного театра</strong></span><span class="week-chip checkpoint-chip">CHECK 01</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Classes, constructors, encapsulation, composition, interfaces и exceptions.</p></div><div><small>Сделать</small><p>Разделить task manager на model, service и `ITaskRepository`; две реализации storage.</p></div><div><small>Контроль</small><p>За 90 минут без AI написать console app, отладить и защитить каждое решение.</p></div></div>
+          </details>
+          <details class="week-card" id="week-5">
+            <summary><span class="week-no">05</span><span class="week-title"><small>QUERIES</small><strong>LINQ, generics и функциональные элементы</strong></span><span class="week-chip">linq</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Generics, delegates, lambdas, `IEnumerable`, LINQ и deferred execution.</p></div><div><small>Сделать</small><p>Фильтры, sorting, grouping, pagination и statistics для task manager.</p></div><div><small>Готовность</small><p>Пишет LINQ query, переписывает циклом и знает момент фактического выполнения.</p></div></div>
+          </details>
+          <details class="week-card" id="week-6">
+            <summary><span class="week-no">06</span><span class="week-title"><small>I/O</small><strong>Async, cancellation и HTTP client</strong></span><span class="week-chip">async</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>`Task`, `async/await`, `CancellationToken`, timeout, `HttpClient`; async ≠ parallel.</p></div><div><small>Сделать</small><p>Client к учебному API с cancellation и обработкой timeout/недоступности.</p></div><div><small>Готовность</small><p>Нет `.Result`/`.Wait()`, cancellation доходит до I/O, ошибки сети объяснимы.</p></div></div>
+          </details>
+          <details class="week-card" id="week-7">
+            <summary><span class="week-no">07</span><span class="week-title"><small>QUALITY</small><strong>Unit-тесты и командный Git</strong></span><span class="week-chip">xUnit</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>xUnit, Arrange–Act–Assert, test doubles, branches, merge conflict и pull request.</p></div><div><small>Сделать</small><p>Regression test → fix для task manager; оформить первый полноценный PR.</p></div><div><small>Готовность</small><p>Tests запускаются одной командой, проверяют behavior; merge conflict решён самостоятельно.</p></div></div>
+          </details>
+        </div>
+      </div>
+
+      <div class="phase" id="phase-2">
+        <header class="phase-header">
+          <div class="phase-number">02</div>
+          <div><p>Недели 8–9 · Data</p><h3>PostgreSQL и SQL</h3></div>
+          <span class="phase-hours">56 часов</span>
+        </header>
+        <div class="weeks-list">
+          <details class="week-card" id="week-8">
+            <summary><span class="week-no">08</span><span class="week-title"><small>MODEL</small><strong>Реляционная модель и CRUD SQL</strong></span><span class="week-chip">postgres</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Tables, PostgreSQL types, PK/FK, constraints, разумную normalization, DDL и CRUD.</p></div><div><small>Сделать</small><p>Schema WorkHub: users, projects, tasks, comments; seed только synthetic data.</p></div><div><small>Готовность</small><p>Relations защищены constraints, cardinality объяснима, CRUD выполняется без GUI-мага.</p></div></div>
+          </details>
+          <details class="week-card" id="week-9">
+            <summary><span class="week-no">09</span><span class="week-title"><small>QUERY</small><strong>JOIN, индексы и транзакции</strong></span><span class="week-chip checkpoint-chip">CHECK 02</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>JOIN, aggregates, CTE, transaction/rollback, базовую isolation, indexes и `EXPLAIN`.</p></div><div><small>Сделать</small><p>Reports по просроченным tasks и workload; сравнить query plan до/после index.</p></div><div><small>Контроль</small><p>Без AI: schema, CRUD, JOIN-report и transaction с rollback.</p></div></div>
+          </details>
+        </div>
+      </div>
+
+      <div class="phase" id="phase-3">
+        <header class="phase-header">
+          <div class="phase-number">03</div>
+          <div><p>Недели 10–17 · Application</p><h3>ASP.NET Core, EF Core и архитектура</h3></div>
+          <span class="phase-hours">224 часа</span>
+        </header>
+        <div class="weeks-list">
+          <details class="week-card" id="week-10">
+            <summary><span class="week-no">10</span><span class="week-title"><small>HTTP</small><strong>Первый ASP.NET Core Web API</strong></span><span class="week-chip">REST</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>URL, headers, JSON, HTTP methods/status codes, REST, idempotency, controllers и OpenAPI.</p></div><div><small>Сделать</small><p>In-memory CRUD tasks и ручные проверки через Swagger/HTTP client.</p></div><div><small>Готовность</small><p>Корректные 200/201/204/400/404; request прослежен от client до response.</p></div></div>
+          </details>
+          <details class="week-card" id="week-11">
+            <summary><span class="week-no">11</span><span class="week-title"><small>BOUNDARIES</small><strong>DTO, validation, DI, errors и logging</strong></span><span class="week-chip">DI</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>DTO, binding, validation, mapping, DI lifetimes, config, middleware, ProblemDetails, logs.</p></div><div><small>Сделать</small><p>Service layer, единый error format и environment configuration.</p></div><div><small>Готовность</small><p>Controller тонкий, DI lifetimes объяснимы, secrets не появляются в logs.</p></div></div>
+          </details>
+          <details class="week-card" id="week-12">
+            <summary><span class="week-no">12</span><span class="week-title"><small>PERSISTENCE</small><strong>EF Core и migrations</strong></span><span class="week-chip">EF Core</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>`DbContext`, entities, Fluent API, migrations, change tracking и async persistence.</p></div><div><small>Сделать</small><p>Заменить memory storage на PostgreSQL и провести учебный migration cycle.</p></div><div><small>Готовность</small><p>Создаёт, применяет и откатывает migration; не заменяет migrations на `EnsureCreated`.</p></div></div>
+          </details>
+          <details class="week-card" id="week-13">
+            <summary><span class="week-no">13</span><span class="week-title"><small>QUERY SHAPE</small><strong>Связи и эффективные EF Core queries</strong></span><span class="week-chip">N+1</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Relationships, projection, `Include`, tracking, `AsNoTracking`, filtering и bounded pagination.</p></div><div><small>Сделать</small><p>Comments, assignees, tags и list endpoint с filters/pages.</p></div><div><small>Готовность</small><p>Нет obvious N+1, reads используют projection/NoTracking, page size ограничен.</p></div></div>
+          </details>
+          <details class="week-card" id="week-14">
+            <summary><span class="week-no">14</span><span class="week-title"><small>INTEGRATION</small><strong>Integration-тесты Web API</strong></span><span class="week-chip checkpoint-chip">CHECK 03</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Unit/integration boundaries, `WebApplicationFactory`, test PostgreSQL и data isolation.</p></div><div><small>Сделать</small><p>Tests endpoints, validation, errors, persistence и один concurrent scenario.</p></div><div><small>Контроль</small><p>Vertical slice с migration и tests; устная защита полного request flow.</p></div></div>
+          </details>
+          <details class="week-card" id="week-15">
+            <summary><span class="week-no">15</span><span class="week-title"><small>IDENTITY</small><strong>Authentication и authorization</strong></span><span class="week-chip">JWT</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Password hashing, access/refresh JWT, claims, roles, policies, ownership, 401/403.</p></div><div><small>Сделать</small><p>Register/login, refresh rotation/revocation и project access rules — только в учебной среде.</p></div><div><small>Готовность</small><p>Password/refresh не хранятся открыто; invalid/revoked tokens и policies покрыты tests.</p></div></div>
+          </details>
+          <details class="week-card" id="week-16">
+            <summary><span class="week-no">16</span><span class="week-title"><small>ARCHITECTURE</small><strong>Onion Architecture</strong></span><span class="week-chip">layers</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Domain, Application, Infrastructure, Api, dependency direction и domain invariants.</p></div><div><small>Сделать</small><p>Разложить уже работающий WorkHub по layers без изменения external behavior.</p></div><div><small>Готовность</small><p>Domain не знает EF/ASP.NET; Application тестируется без real DB. Никакого CQRS «для красоты».</p></div></div>
+          </details>
+          <details class="week-card" id="week-17">
+            <summary><span class="week-no">17</span><span class="week-title"><small>CONTAINERS</small><strong>Docker и Docker Compose</strong></span><span class="week-chip checkpoint-chip">CHECK 04</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Image, container, volume, network, multi-stage Dockerfile, Compose и health checks.</p></div><div><small>Сделать</small><p>Поднять API + PostgreSQL одной командой из clean clone.</p></div><div><small>Контроль</small><p>Полный запуск, auth flow, layer boundaries и recovery после container restart.</p></div></div>
+          </details>
+        </div>
+      </div>
+
+      <div class="phase" id="phase-4">
+        <header class="phase-header">
+          <div class="phase-number">04</div>
+          <div><p>Недели 18–22 · Operations</p><h3>Интеграции и эксплуатация</h3></div>
+          <span class="phase-hours">140 часов</span>
+        </header>
+        <div class="weeks-list">
+          <details class="week-card" id="week-18">
+            <summary><span class="week-no">18</span><span class="week-title"><small>CACHE</small><strong>Redis без магического ускорения</strong></span><span class="week-chip">cache</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Key-value, TTL, cache-aside, serialization, invalidation, cache miss и degradation.</p></div><div><small>Сделать</small><p>Cache project card/dashboard с invalidation на write.</p></div><div><small>Готовность</small><p>Демонстрирует hit/miss/expiry; отказ Redis не ломает основной CRUD.</p></div></div>
+          </details>
+          <details class="week-card" id="week-19">
+            <summary><span class="week-no">19</span><span class="week-title"><small>MESSAGING</small><strong>RabbitMQ и worker</strong></span><span class="week-chip">queue</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Producer, consumer, exchange, queue, routing, durable messages, ack/nack, at-least-once.</p></div><div><small>Сделать</small><p>`TaskCreated` event и audit/notification worker с retry + DLQ.</p></div><div><small>Готовность</small><p>Restart не теряет message, failure не зацикливается, duplicate не удваивает effect.</p></div></div>
+          </details>
+          <details class="week-card" id="week-20">
+            <summary><span class="week-no">20</span><span class="week-title"><small>REALTIME</small><strong>SignalR</strong></span><span class="week-chip">live</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Hub, connection, groups, connection authorization, reconnect и server notifications.</p></div><div><small>Сделать</small><p>Project notifications и простой test client.</p></div><div><small>Готовность</small><p>Projects изолированы groups, anonymous client rejected, disconnect не теряет core data.</p></div></div>
+          </details>
+          <details class="week-card" id="week-21">
+            <summary><span class="week-no">21</span><span class="week-title"><small>RELIABILITY</small><strong>Outbox, retry и идемпотентность</strong></span><span class="week-chip checkpoint-chip">CHECK 05</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Transactional outbox, event ID, delayed retry, graceful shutdown, timeout/cancellation.</p></div><div><small>Сделать</small><p>Outbox dispatcher и consumer deduplication.</p></div><div><small>Контроль</small><p>Mentor отключает Redis/RabbitMQ и дублирует message; данные остаются целыми.</p></div></div>
+          </details>
+          <details class="week-card" id="week-22">
+            <summary><span class="week-no">22</span><span class="week-title"><small>OPERATE</small><strong>Observability, performance, security и CI</strong></span><span class="week-chip">CI</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Structured logs, correlation ID, health/readiness, metrics, `EXPLAIN`, rate limiting и CI.</p></div><div><small>Сделать</small><p>Измерить 2 bottleneck, связать request → message, ограничить login, настроить build/tests.</p></div><div><small>Готовность</small><p>Есть before/after, trace по correlation ID, reproducible CI и ноль secrets в repo/logs.</p></div></div>
+          </details>
+        </div>
+      </div>
+
+      <div class="phase" id="phase-5">
+        <header class="phase-header">
+          <div class="phase-number">05</div>
+          <div><p>Недели 23–24 · Ship</p><h3>Имитация реальной работы</h3></div>
+          <span class="phase-hours">56 часов</span>
+        </header>
+        <div class="weeks-list">
+          <details class="week-card" id="week-23">
+            <summary><span class="week-no">23</span><span class="week-title"><small>SPRINT</small><strong>Bug + feature как настоящие tickets</strong></span><span class="week-chip">2 PR</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Изучить</small><p>Acceptance criteria, reproduction, risk assessment, small commits и чужой code.</p></div><div><small>Сделать</small><p>Один anonymized bug и одна bounded feature от Johan.</p></div><div><small>Готовность</small><p>Diff строго в scope, есть regression tests, review исправлен без полной переписи.</p></div></div>
+          </details>
+          <details class="week-card" id="week-24">
+            <summary><span class="week-no">24</span><span class="week-title"><small>SHIP</small><strong>Финальный release и защита</strong></span><span class="week-chip checkpoint-chip">CHECK 06</span><span class="week-toggle"></span></summary>
+            <div class="week-body"><div><small>Собрать</small><p>Clean build, CI, seed data, README, architecture diagram, runbook и rollback.</p></div><div><small>Показать</small><p>Working WorkHub, failure drills Redis/RabbitMQ и 20-минутную demo.</p></div><div><small>Защитить</small><p>За 60–90 минут без AI исправить незнакомый bug и объяснить request + event flow.</p></div></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-section section" id="ai" aria-labelledby="ai-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div><span class="section-kicker">03 / Codex + Claude</span><h2 id="ai-title">AI — второй пилот.<br><em>Не водитель.</em></h2></div>
+          <p>Источник истины — code, compiler, tests, запущенное приложение и official docs. Согласие двух моделей всё ещё не integration test.</p>
+        </div>
+
+        <div class="ai-role-grid">
+          <article class="ai-role codex-role">
+            <div class="role-top"><span class="role-mark">C</span><div><small>Repository work</small><h3>Codex</h3></div></div>
+            <ul><li>Проследить вызовы и найти связанные files</li><li>Разбить ticket на маленькие шаги</li><li>Подготовить minimal diff и запустить checks</li><li>Провести review относительно criteria</li></ul>
+          </article>
+          <div class="ai-rule"><span>≠</span><p>Ни один ответ<br>не принимается<br>без проверки</p></div>
+          <article class="ai-role claude-role">
+            <div class="role-top"><span class="role-mark">A</span><div><small>Thinking partner</small><h3>Claude</h3></div></div>
+            <ul><li>Объяснить тему сократически</li><li>Уточнить requirements и trade-offs</li><li>Провести независимое review diff</li><li>Проверить понимание вопросами</li></ul>
+          </article>
+        </div>
+
+        <div class="ai-stages" role="group" aria-label="Разрешения AI по этапам">
+          <div><span>01–04</span><strong>Объяснять</strong><small>Без готового code</small></div>
+          <div><span>05–08</span><strong>Навигировать</strong><small>Read-only</small></div>
+          <div><span>09–12</span><strong>Планировать</strong><small>После своей попытки</small></div>
+          <div><span>13–16</span><strong>Диагностировать</strong><small>После reproduction</small></div>
+          <div><span>17–20</span><strong>Править</strong><small>Minimal patch</small></div>
+          <div><span>21–24</span><strong>Сопровождать</strong><small>Полный small ticket</small></div>
+        </div>
+
+        <div class="ai-bottom-grid">
+          <div class="prompt-card">
+            <div class="terminal-top"><span></span><span></span><span></span><small>learning-prompt.txt</small></div>
+            <pre>Я изучаю [тема] и уже понимаю [что].
+
+Не давай готовое решение. Объясни идею
+на маленьком примере, затем задай мне
+3 вопроса и одно упражнение.
+
+Отделяй факты от предположений.</pre>
+          </div>
+          <div class="security-card">
+            <span class="card-index">Никогда не отправлять</span>
+            <h3>Secrets остаются секретами</h3>
+            <p>Passwords, API keys, cookies, JWT, connection strings, production dumps и персональные данные не попадают ни в один AI prompt.</p>
+            <strong>Два нерабочих AI-совета подряд → stop, minimal reproduction, docs или mentor.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="control section shell" id="control" aria-labelledby="control-title">
+      <div class="section-heading">
+        <div><span class="section-kicker">04 / Контроль качества</span><h2 id="control-title">Не прошёл ворота —<br><em>не идёшь дальше.</em></h2></div>
+        <p>Checkpoint — новая задача, часть без AI и короткая защита. При провале фиксируем конкретный пробел и пересдаём через 5–7 дней.</p>
+      </div>
+
+      <div class="checkpoint-track">
+        <article><span>04</span><div><small>CHECK 01</small><h3>C# foundation</h3><p>Console app + debug + устная защита.</p></div></article>
+        <article><span>09</span><div><small>CHECK 02</small><h3>Data</h3><p>Schema + JOIN + transaction без AI.</p></div></article>
+        <article><span>14</span><div><small>CHECK 03</small><h3>Vertical slice</h3><p>API + PostgreSQL + integration tests.</p></div></article>
+        <article><span>17</span><div><small>CHECK 04</small><h3>System</h3><p>Auth + layers + clean Compose start.</p></div></article>
+        <article><span>21</span><div><small>CHECK 05</small><h3>Failure drill</h3><p>Redis/RabbitMQ fail, данные живы.</p></div></article>
+        <article><span>24</span><div><small>CHECK 06</small><h3>Ship</h3><p>Незнакомый bug без AI + demo.</p></div></article>
+      </div>
+
+      <div class="review-grid">
+        <div class="rubric-card">
+          <span class="card-index">Rubric · 18 баллов</span>
+          <h3>Каждый PR оценивается одинаково</h3>
+          <div class="rubric-list"><span>Correctness <b>0–3</b></span><span>Понимание <b>0–3</b></span><span>Code quality <b>0–3</b></span><span>Testing <b>0–3</b></span><span>Data &amp; security <b>0–3</b></span><span>Delivery <b>0–3</b></span></div>
+          <p><strong>Проход:</strong> 12/18 без нулей. Checkpoint — 13/18, ключевые критерии не ниже 2.</p>
+        </div>
+        <div class="mentor-card">
+          <span class="card-index">Johan · 60–75 минут в неделю</span>
+          <ol><li><span>15 мин</span>Demo результата</li><li><span>30 мин</span>Review одного PR</li><li><span>15 мин</span>Вопросы без AI</li><li><span>5–15 мин</span>Следующий bounded ticket</li></ol>
+          <p>После двух неудачных review cycles решение не переписывается за студента: совместная диагностика и дробление задачи.</p>
+        </div>
+      </div>
+
+      <div class="access-ladder">
+        <div class="ladder-copy"><span class="section-kicker">Лестница допуска</span><h3>Доступ растёт<br>только вместе<br>с доказательствами</h3><p>Даже после курса студенту не нужны production secrets, ручная запись в production DB или самостоятельный emergency deploy.</p></div>
+        <ol>
+          <li><span>A0</span><div><strong>Учебный repo</strong><small>Local + synthetic data</small></div></li>
+          <li><span>A1</span><div><strong>Read-only code</strong><small>После checkpoint 01</small></div></li>
+          <li><span>A2</span><div><strong>Mirrored tickets</strong><small>Branch + local environment</small></div></li>
+          <li><span>A3</span><div><strong>Green tasks</strong><small>Merge/deploy делает Johan</small></div></li>
+          <li><span>A4</span><div><strong>Staging под контролем</strong><small>После checkpoint 05</small></div></li>
+          <li><span>A5</span><div><strong>Отдельное решение</strong><small>Только после курса</small></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="final section" id="final" aria-labelledby="final-title">
+      <div class="shell final-shell">
+        <div class="final-copy">
+          <span class="section-kicker">05 / Финальный проект</span>
+          <h2 id="final-title">WorkHub.<br><em>Сервис, который<br>умеет ломаться правильно.</em></h2>
+          <p>Проекты, задачи, комментарии и уведомления. Не pet-project для скриншота, а стенд для request flow, отказов зависимостей и осмысленного recovery.</p>
+          <ul class="final-list"><li>JWT access/refresh + roles/policies</li><li>PostgreSQL + EF Core migrations</li><li>Redis cache-aside с degradation</li><li>RabbitMQ + retry/DLQ/outbox</li><li>SignalR groups + authorization</li><li>Tests, Compose, CI, logs, runbook</li></ul>
+        </div>
+
+        <div class="system-map" role="img" aria-label="Архитектура WorkHub">
+          <div class="system-node node-client"><small>01</small><strong>Client</strong><span>HTTP · SignalR</span></div>
+          <div class="system-arrow arrow-a">→</div>
+          <div class="system-node node-api"><small>02</small><strong>API</strong><span>ASP.NET Core</span></div>
+          <div class="system-arrow arrow-b">↓</div>
+          <div class="system-node node-app"><small>03</small><strong>Application</strong><span>Use cases</span></div>
+          <div class="system-node node-db"><small>04</small><strong>PostgreSQL</strong><span>Source of truth</span></div>
+          <div class="system-node node-cache"><small>05</small><strong>Redis</strong><span>Optional speed</span></div>
+          <div class="system-node node-bus"><small>06</small><strong>RabbitMQ</strong><span>At least once</span></div>
+          <div class="system-node node-worker"><small>07</small><strong>Worker</strong><span>Idempotent</span></div>
+          <svg viewBox="0 0 660 520" aria-hidden="true"><path d="M332 104V175M330 270 160 358M330 270 330 358M330 270 506 358M506 424 408 480"/></svg>
+          <div class="failure-note"><span>FAILURE DRILL</span><p>Выключить Redis. Остановить broker. Доставить message дважды. Данные должны выжить.</p></div>
+        </div>
+      </div>
+
+      <div class="finish-line shell">
+        <div><span>Курс завершён, когда</span><strong>20/24 PR</strong></div>
+        <div><span>Сданы</span><strong>6/6 checks</strong></div>
+        <div><span>Финал</span><strong>≥15/18</strong></div>
+        <div><span>Без AI</span><strong>1 bug fixed</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><span class="brand-mark">B/24</span><p>Backend apprenticeship<br>для Кира · под review Johan</p></div>
+      <p>Сделано для практики.<br>Не является пропуском в production.</p>
+      <a href="#top">Наверх <span>↑</span></a>
+    </div>
+  </footer>
+</body>
+</html>
